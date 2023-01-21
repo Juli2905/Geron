@@ -18,7 +18,7 @@ $white:#FFFFFF;
 @mixin btn ($color) {
     width: 100%;
     border: 1px solid $color;
-    color:$main; 
+    color:$color; 
     border-radius: 5px;
     padding: 10px 0;
     font-size: 14px;
@@ -36,7 +36,15 @@ form{
     border: 1px solid $stroke;
     border-radius: 8px;
 }
-input 
+input[type="text"]{
+    width: 100%;
+    border: 1px solid $stroke;
+    border-radius: 6px;
+    padding: 7px 11px;
+    @include font(700);
+    font-size: 10px;
+}
+
 .btn {
     @include btn($main);
 }
