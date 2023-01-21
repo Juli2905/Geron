@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.ttf");
+  font-weight: 900;
+}
 body {
   margin: 0;
 }
@@ -31,6 +46,75 @@ ul {
 
 li {
   margin: 0;
+}
+
+form {
+  background-color: #FFFFFF;
+  padding: 15px 20px 25px 20px;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+}
+
+input .btn {
+  width: 100%;
+  border: 1px solid #FF3D00;
+  color: #FF3D00;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn.second {
+  width: 100%;
+  border: 1px solid #0085FF;
+  color: #FF3D00;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FF3D00;
+  color: #FFFFFF;
+}
+
+.btn.second:hover {
+  background-color: #0085FF;
+  color: #FFFFFF;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+p {
+  font-family: "Montserrat";
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

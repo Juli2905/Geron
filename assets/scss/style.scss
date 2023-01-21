@@ -1,4 +1,6 @@
+@import 'fonts';
 @import 'reset';
+
 
 $main:#FF3D00;
 $second:#0085FF;
@@ -6,13 +8,63 @@ $black: #202020;
 $stroke: #E3E3E3;
 $placeholder:#808080;
 $back:#F7F7F7;
+$white:#FFFFFF;
 
-%btn  {
+@mixin font($size){
+    font-family: 'Montserrat';
+    font-weight: $size;
+}
+
+@mixin btn ($color) {
     width: 100%;
+    border: 1px solid $color;
+    color:$main; 
     border-radius: 5px;
     padding: 10px 0;
+    font-size: 14px;
+    @include font(900);
+    text-align: center;
+    cursor: pointer;
 }
 @mixin activeBtn($color){
     background-color: $color;
-    color: $color;
+    color: $white;
+}
+form{
+    background-color: $white;
+    padding: 15px 20px 25px 20px;
+    border: 1px solid $stroke;
+    border-radius: 8px;
+}
+input 
+.btn {
+    @include btn($main);
+}
+.btn.second{
+    @include btn($second);
+}
+
+.btn:hover {
+    @include activeBtn($main);
+}
+.btn.second:hover{
+    @include activeBtn($second);
+}
+h1, h2, h3, h4{
+    @include font(900);
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 14px;
+}
+h4{
+    font-size: 12px;
+}
+p{
+    @include font(400);
 }
