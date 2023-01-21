@@ -99,7 +99,7 @@ p{
     height: 100%;
 }
 .cover.rectangle{
-    @include cover(350/(543/100)*1%)
+    @include cover(calc(350/(543/100))*1%);
 }
 
 .wrapper{
